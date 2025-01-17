@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js" integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active" onclick="scrollToSection('home')">Home</a>
+            <a href="#about-text" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skill</a>
+            <a href="#work" style="--i:4">Work</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="my-image">
+            <img src="Profile.jpg" id="my-image">
+        </div>
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Sowmya Kalam</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p id="about">
+                I am seeking opportunities as a Web Developer or Software Development Engineer. 
+            </p>
+            <div class="home-sci">
+                <a href="https://github.com/Sowmyakalam07" style="--i:7" target="_blank"><box-icon type='logo' name='github'></box-icon></a>
+                <a href="https://www.linkedin.com/in/kalamsowmya07/" style="--i:8" target="_blank"><box-icon name='linkedin-square' type='logo' ></box-icon></a>
+                <a href="#" style="--i:9" target="_blank"><box-icon name='facebook-circle' type='logo' ></box-icon></a>
+                <a href="https://www.instagram.com/squiddy_0704/" style="--i:10" target="_blank"><box-icon name='instagram-alt' type='logo'></box-icon></a>
+            </div>
+        </div>
+    <span class="home-imghover"></span>    
+    </section>
+    <section class="about" id="about">
+        <div class="about-img" id="about-img">
+            <img src="Profile.jpg" class="about-profile">
+        </div>
+        <div class="about-text" id="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Full Stack Developer</h4>
+            <p>
+              I am a passionate B.Tech final year student specializing in CSE, with a growing 
+              interest in the MERN stack. As a beginner in this area, I am eager to learn and 
+              develop my skills as a Web Developer or Software Development Engineer. I focus on 
+              delivering high-quality code and have a keen eye for detail, aiming to build dynamic
+               web applications and ensure an intuitive user experience. Alongside my technical skills, 
+               I possess effective communication, problem-solving abilities, and a proactive mindset. 
+               I am looking for opportunities to contribute my skills and enthusiasm to meaningful projects 
+               and be a valuable asset to any team. Let's connect and explore how I can grow and make a difference 
+               in your organization. Thank you for considering my profile!
+          </p>
+
+            <a href="https://drive.google.com/file/d/1ydgPExDDtfrm5ypYE2nRnNKnvWxcSHPv/view" class="btn-box" target="_blank">My Resume</a>
+        </div>
+    </section>
+    
+    <section class="skills" id="skills">
+        <h2 id="skill">My <span class="skill-head">Skills</span></h2>
+        <div class="skills-list">
+          <div class="skill" onclick="window.open('https://www.hackerrank.com/certificates/9a291b98f195','_blank')">
+              <h3>C++ Programming</h3>
+              <p>C++</p>
+          </div>
+          <div class="skill">
+              <h3>Java Programming</h3>
+              <p>Java</p>
+          </div>
+          <div class="skill" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/EWR6LSVQMAHP','_blank')" >
+            <h3>Front-end Development</h3>
+            <p>HTML, CSS, JavaScript, React</p>
+          </div>
+          <div class="skill" onclick="window.open('https://www.hackerrank.com/certificates/5017e8a502ee','_blank')">
+            <h3>DBMS</h3>
+            <p>SQL</p>
+          </div>
+          <div class="skill" onclick="window.open('https://udemy-certificate.s3.amazonaws.com/pdf/UC-90535a39-25ed-4dcb-a024-945160565ee8.pdf','_blank')">
+            <h3>Python Programming</h3>
+            <p>Python</p>
+        </div>
+          <!-- Add more skill blocks as needed -->
+        </div>
+    </section>
+    <section class="work" id="work">
+      <h2 id="work-experience">Work <span class="work-head">Experience</span></h2>
+      <div class="work-list">
+          <div class="work-item">
+            <img src="apssdc.png">
+          </div>
+          <div class="work-item">
+              <h3>APSSDC Internship</h3>
+              <p>June 2023 - August 2023</p>
+              <p>Participated in a virtual internship program offered by APSSDC specializing in Data Analysis.Completed a hands-on project that enhanced skills in data manipulation, visualization, and problem-solving. This inaugural experience has laid a solid groundwork for my future career aspirations.</p>
+          </div>
+
+      </div>
+    </section>
+    <section class="work" id="contact">
+      <h2 id="work-experience">Contact <span class="work-head">Me</span></h2>
+      <div class="work-list">
+        <a href="mailto:sowmyakalam04@gmail.com" class="btn-box" target="_blank">Email
+      </a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
